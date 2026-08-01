@@ -1,0 +1,7 @@
+venv
+__pycache__
+*.pyc
+*.pyo
+temp
+hf_cache
+.git

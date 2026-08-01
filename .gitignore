@@ -1,0 +1,50 @@
+# Python
+venv/
+rvc_venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# AI model and cache files
+hf_cache/
+*.pth
+*.index
+*.ckpt
+*.safetensors
+
+# Temporary files
+temp/
+*.tmp
+*.log
+
+# Generated audio
+output_cloned.wav
+podcast_output.wav
+podcast_line_*.wav
+replacement.wav
+edited_audio.wav
+rvc_output.wav
+dramatic_clone.wav
+infer_cli_*.wav
+
+# Training data and generated datasets
+training_data/*
+!training_data/.gitkeep
+
+# Saved user voices
+saved_voices/*
+!saved_voices/.gitkeep
+
+# RVC models
+rvc_models/*
+!rvc_models/.gitkeep
+
+# System and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment files
+.env

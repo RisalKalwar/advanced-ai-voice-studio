@@ -1,0 +1,16 @@
+services:
+  voice-studio:
+    build: .
+    container_name: ai_voice_studio
+
+    ports:
+      - "7860:7860"
+
+    volumes:
+      - ./app.py:/app/app.py
+      - ./saved_voices:/app/saved_voices
+      - ./training_data:/app/training_data
+      - ./rvc_models:/app/rvc_models
+      - ./hf_cache:/app/hf_cache
+
+    restart: unless-stopped
